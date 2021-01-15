@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet"> 
+    <title>Project 1</title>
+</head>
+<body>
+    <header>
+        <h1><span class="playerName">Player</span>'s escape from the Woods</h1>
+    </header>
+
+    <Main>
+        <section class="show intro">
+            <div class="wrapper">
+                <p>You've been working on this Javascript project for hours. You decide to take a break and go for a nice long walk. You mumble to yourself, "it's only been 6 days, I'm not dumb, javascript is just hard." You sit down on a park bench and close your eyes just for a moment... and when you open your eyes...</p>
+                <input type="submit" value="next" class="introButton">
+            </div>
+        </section>
+
+        <section class="hide scenarioOne">
+            <div class="wrapper">
+                <p>You find yourself in the middle of the woods. You have no idea how you arrived here. You look around your immediate surrounding and see a small cliff to the left and a small abandoned hut to the right. You debate whether you should climb the cliff to get a better vantage point or go to the hut.. </p>
+                <form class="sceneOneForm">
+                    <h2>You decide to...</h2>
+                    <div>
+                        <label for="hut">go to the abandoned hut</label>
+                        <input type="radio" name="destination" id="correct">
+
+                        <label for="cliff">climb the small cliff</label>
+                        <input type="radio" name="destination" id="wrong">
+                    </div>
+                    <input type="submit" value="next" class="sceneOneButton" id="start">
+                </form>
+            </div>
+        </section>
+       
+        <section class="hide scenarioTwo">
+            <div class="wrapper">
+                <p>You arrive at the hut and enter. The inside of the hut is bigger than you expect. You look around and notice a door that leads to the basement. There is a lock on it. It's a strange two system lock.. You only need to guess the 2 right number ranging from 0 - 9 for it to open.</p>
+
+                <form class="sceneTwoForm">
+                    <h2>Choose 2 numbers between 0 - 9</h2>
+                    <div>
+                        <label for="numOne">First number: </label>
+                        <input type="text" class="textOne" id="5">
+
+                        <label for="numTwo">Second number: </label>
+                        <input type="text" class="textTwo" id="2">
+
+                    </div>
+                    <input type="submit" value="next" class="sceneTwoButton">
+                </form>
+            </div>
+        </section>
+       
+        <section class="hide scenarioThree">
+            <div class="wrapper">
+                <p>You open the door to the basement. You walk down the dark stairs cautiously. You reach the end of the stairs and come across two tunnels. Left tunnel reads "Exit" and the tunnel on the right reads "Hell"</p>
+                <form class="sceneThreeForm">
+                    <h2>You choose the tunnel on the...</h2>
+                    <div>
+                        <label for="left">Left Tunnel</label>
+                        <input type="radio" name="tunnel" id="wrong">
+
+                        <label for="right">Right Tunnel</label>
+                        <input type="radio" name="tunnel" id="correct">
+                    </div>
+                    <input type="submit" value="next" class="sceneThreeButton">
+                </form>
+            </div>
+        </section>
+        
+        <section class="hide end">
+            <div class="wrapper">
+            <p>You don't know why you decide to take the right tunnel, but you did. As you reach the end of the tunnel, you notice a ginormous wooden door. You push with all your might and the door slowly creaks open. Your knees are weak and arms are heavy. You close your eyes and walk through the door. You are greeted by Owen, Esther, Susan, Linda and Paul and they ask you simultaneously, <strong>"How was your experience with Javascript?"</strong></p>
+
+                <input type="submit" value="The End" class="endButton" id="end">
+ 
+            </div>
+        </section>
+    </Main>
+
+    <footer>
+        <p>Created by Peter Bae for Juno College</p>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
